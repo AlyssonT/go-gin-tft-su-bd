@@ -1,7 +1,7 @@
 package controller
 
 /*
-#cgo LDFLAGS: -L../ -ltest_ffi_func
+#cgo LDFLAGS: -L../ -llibtest_ffi_func
 #include <stdlib.h>
 
 extern char* solve(int numChamps, int highTier, char* augment, double tierCoefficient, char* champions, char* traits);
