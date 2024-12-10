@@ -29,7 +29,6 @@ func (pu *SolveUseCase) GetDataToSolve(augment string) (model.DataToSolve, error
 	dataToSolve.Traits = make(map[int]int)
 	for _, championRow := range championRows {
 		champion, exist := dataToSolve.Champions[championRow.Id]
-		fmt.Println(championRow.IsUnique, championRow.Trait)
 		if !championRow.IsUnique || augment == "builtDifferent" {
 			if exist {
 				champion.Traits = append(champion.Traits, championRow.Trait)
